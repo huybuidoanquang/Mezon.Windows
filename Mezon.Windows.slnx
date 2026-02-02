@@ -1,0 +1,18 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Mezon.Application/Mezon.Application.csproj" />
+  <Project Path="Mezon.Bootstrapper/Mezon.Bootstrapper.csproj" Id="cf3be302-af98-457b-bae7-f352e252be92" />
+  <Project Path="Mezon.Domain/Mezon.Domain.csproj" />
+  <Project Path="Mezon.Infrastructure/Mezon.Infrastructure.csproj" />
+  <Project Path="Mezon.Presentation/Mezon.Presentation.csproj" Id="0fa73dac-a68b-4ed9-bc4e-dcd5af796b4c">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Deploy />
+  </Project>
+  <Project Path="Mezon.Tests/Mezon.Tests.csproj" Id="54a5f4d8-296d-4ce0-91e2-c389a6ced4bc" />
+</Solution>

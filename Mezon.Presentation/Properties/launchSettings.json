@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Mezon.Presentation (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Mezon.Presentation (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
