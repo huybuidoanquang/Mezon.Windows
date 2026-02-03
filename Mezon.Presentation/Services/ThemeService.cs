@@ -22,10 +22,8 @@ namespace Mezon.Presentation.Services
         {
             CurrentTheme = theme;
 
-            // 1. Lấy WindowService để tìm tất cả cửa sổ đang mở
             var windowService = _serviceProvider.GetRequiredService<IWindowService>();
 
-            // 2. Duyệt qua từng cửa sổ và đổi theme
             foreach (var window in windowService.GetActiveWindows())
             {
                 ApplyThemeToWindow(window);
